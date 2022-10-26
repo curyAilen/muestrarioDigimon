@@ -1,0 +1,21 @@
+<%- include ( './partials/head' ); %>
+ <!--ESTILOS PROPIOS-->
+ <title><%=carta.titulo%></title>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="">     
+<%- include ( './partials/header'); %>
+<%- include ( './partials/contacto'); %>
+<div class="container">
+    <section class="row  justify-content-center detalleContenedor">
+    <img class="imgDetalle col-4" src="/imagenes/<%=carta.imagen%>" alt="<%=carta.nombre%>" >
+    <div class="col-6 text-center contenido">
+    <h3><%=carta.nombre%></h3>
+    <h4><%=carta.precio%></h4>
+    <p><%=carta.descripcion%></p>
+    <h3><%=carta.contacto%></h3>
+    </div>    
+</section>
+</div>
+<%- include ( './partials/footer'); %>

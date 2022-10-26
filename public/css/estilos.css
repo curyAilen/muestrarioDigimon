@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+ background-color: rgb(81, 81, 103);   
+}
+.cardDigimonInicio{
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    margin: 5px 10px;
+
+}
+.detalleContenedor{
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    margin: 25px 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: white;
+    max-height: 500px;
+    overflow: hidden;
+}
+.contenido{
+    align-self: center;
+}
