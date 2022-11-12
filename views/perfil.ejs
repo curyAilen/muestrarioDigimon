@@ -1,0 +1,29 @@
+<%- include ( './partials/head' ); %>
+<!--ESTILOS PROPIOS-->
+
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="">
+  <%- include ( './partials/header'); %>
+  <%- include ( './partials/contacto'); %>
+  <main>
+    <div id="profile">
+   
+      <% if (locals.userLogged) { %>
+      <div id="data">
+        <p> Nombre: <%= locals.userLogged.nombre %> </p>
+        <article class="row">
+          <a href="/altaCarta" class=" btn col-lg-3 col-md-12 text-center ">Agregar carta</a>
+          <a href="/user/logout" class="btn  col-lg-3 col-md-12 text-center ">Logout</a>
+
+        </article>
+      </div>
+      <% } else {%>
+      <h1>Algo salio mal, o no estas registrado o simplemente tenes qeu recargar la página.</h1>
+      <%}%>
+            
+        </div>
+    </main>
+    <script src="/js/profile.js"></script>
+        <%- include ( './partials/footer.ejs' ); %>

@@ -1,0 +1,31 @@
+<%- include ( './partials/head' ); %>
+ <!--ESTILOS PROPIOS-->
+
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body class="">     
+<%- include ( './partials/header'); %>
+<%- include ( './partials/contacto'); %>
+        <main class="container">
+            <form action="/user/registro" class=" form-login formulario" method="post" enctype="multipart/form-data">
+                <div class="form-group"> 
+                    <label>Nombre de usuario</label>
+                    <input type="nombre" name="userName" id="userName" class="form-control"/>
+                </div>
+                <div class="form-group"> 
+                    <label>Clave</label>
+                    <input type="password" name="userPassword" id="userPassword" class="form-control"/>
+                </div>
+                <div class="recordarmediv form-group">
+                    <input type="checkbox" name="recordarme" id="recordarme">
+                    <label for="recordarme" id="recordarmelabel">Recordarme</label>
+                   
+                </div>
+                <button type="submit" class="btn btn-light " id="inicioSesion">Iniciar sesión</button>
+              
+            </form>
+        </main>
+        <script src="/js/login.js"></script>
+
+        <%- include ( './partials/footer.ejs' ); %>

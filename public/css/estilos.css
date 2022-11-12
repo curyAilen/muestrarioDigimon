@@ -3,15 +3,15 @@
     box-sizing: border-box;
 }
 body{
- background-color: rgb(81, 81, 103);   
+background-color: rgb(244, 244, 244);   
 }
 .cardDigimonInicio{
-    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.459);
     margin: 5px 10px;
 
 }
 .detalleContenedor{
-    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.452);
     margin: 25px 10px;
     padding: 5px;
     border-radius: 12px;
@@ -21,4 +21,22 @@ body{
 }
 .contenido{
     align-self: center;
+}
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+.formulario{
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.399);
+    background-color: rgb(68, 68, 68);  
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 25px 30px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#inicioSesion{
+align-content: flex-end;
 }

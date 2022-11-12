@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
         console.log(file)
         const newFileName = 'Card - ' +  Date.now() + path.extname(file.originalname);
         cb(null, newFileName);
-    } 
+    }  
 });
 const upload = multer({storage});
 
@@ -35,5 +35,7 @@ router.post('/editCarta/:id', upload.single('imagen'),mainController.edited)
 
 //Borrar Producto
 router.delete('/:id', mainController.delete);
+
+
 
 module.exports = router;

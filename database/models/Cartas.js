@@ -6,8 +6,8 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        nombre: {
-            type: dataTypes.STRING(150),
+        carta: {
+            type: dataTypes.STRING,
             allowNull: false, 
             validate: {min: 5}
         },
@@ -18,9 +18,13 @@ module.exports = (sequelize, dataTypes) => {
         stock: {
             type: dataTypes.INTEGER,
             allowNull: false
-        },
+        }, 
+        edicion:{
+            type: dataTypes.STRING,
+            allowNull: false
+        },  
         contacto:{
-            type: dataTypes.STRING(255),
+            type: dataTypes.STRING,
             allowNull: false
         },  
         imagen:{
