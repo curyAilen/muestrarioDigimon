@@ -5,6 +5,13 @@
 body{
 background-color: rgb(244, 244, 244);   
 }
+.botones{
+    background-color: rgb(255, 189, 123);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.34);
+    margin: 15px 10px;
+    color: white;
+    font-weight: 600;
+}
 .cardDigimonInicio{
     box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.459);
     margin: 5px 10px;
@@ -15,16 +22,44 @@ background-color: rgb(244, 244, 244);
     margin: 25px 10px;
     padding: 5px;
     border-radius: 12px;
-    background-color: white;
-    max-height: 500px;
+    background-color: white;    
     overflow: hidden;
+}
+.edicionDetalleCarta{
+    text-align: end;
+    margin: 10px 25px 0 0;
+}
+.contieneDetalle{
+    max-width: 60%;
+}
+.formularioEliminar{
+    text-align: end;
+}
+.eliminar{
+   
+    margin: 10px 5px 0 0;
+    background-color: rgb(247, 94, 38);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.34);
+    margin: 15px 10px;
+    color: white;
+    font-weight: 600;
 }
 .contenido{
     align-self: center;
+    margin: 25px 0;
+    border-radius: 15px;
+    
+}
+.detalleDato{
+    margin: 35px 50px;
 }
 .form-group{
     margin-left: auto;
     margin-right: auto;
+}
+.contieneStokEdicion{
+    justify-content: space-around;
+    margin: 25px 0 ;
 }
 .formulario{
     box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.399);

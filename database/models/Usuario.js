@@ -14,6 +14,10 @@ module.exports = (sequelize, dataTypes) => {
         clave: {
             type: dataTypes.STRING,
             allowNull: false
+        },
+        contacto: {
+            type: dataTypes.INTEGER,
+            allowNull: false
         }
 
     };

@@ -11,12 +11,17 @@
 <section class="row justify-content-center ml-5 mr-5">
     <%for(let i = 0; i< cartas.length; i++){%>
 <article class="col-lg-3 col-md-12 card cardDigimonInicio mt-5 ">
-        <img class="card-img-top" src="/imagenes/<%=cartas[i].imagen%>" alt="Digimon: <%=cartas[i].nombre%> ">
-        <div class="card-body text-center">
-        <h3 class="card-title"><%=cartas[i].nombre%></h3>
-        <p class="card-text"><%=cartas[i].descripcion%> <br> <%=cartas[i].contacto%></p>
-        <h5 class="card-subtitle"><%=cartas[i].precio%></h5>
-        <a href="/detalleCarta/<%=cartas[i].idCartas%>" class="btn btn-primary">Ver más</a>
+        <img class="card-img-left" src="/imagenes/<%=cartas[i].imagen%>" alt="Digimon: <%=cartas[i].nombre%> ">
+        <div class="card-body text-center ">
+            <h3 class="card-title mt-2 mb-4"><%=cartas[i].carta%></h3>
+            <h4 class="card-subtitle">$<%=cartas[i].precio%>.-</h4>
+            <div class="d-flex contieneStokEdicion">
+                <h5 class="card-text">Edición: <%=cartas[i].edicion%></h5>   
+                <h5 class="card-text">Stock: <%=cartas[i].stock%></h5>    
+            </div>
+            
+            <p class="card-text">Descripción: <%=cartas[i].descripcion%> </p>   
+            <a href="/detalleCarta/<%=cartas[i].idCartas%>" class="btn btn-primary">Ver más</a>
         </div>
 </article>
 <%}%>

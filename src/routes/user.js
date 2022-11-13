@@ -16,8 +16,6 @@ router.get('/logout', userController.logout);
 // Profile
 router.get('/perfil' , userController.perfil);
 
-// Profile
-router.get('/editarPerfil/:id',updateProfileAuth, userController.editarPerfil);
-router.post('/editarPerfil/:id', userController.editedPerfil);
+
 
 module.exports = router;

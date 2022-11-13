@@ -60,34 +60,6 @@ let usuarioController = {
                 });
             });
     },
-    editarPerfil: (req, res) => {
-        Usuarios.findByPk(req.params.id).then((usuario) => {
-            res.render("editarPerfil", {
-                usuario: usuario,
-            });
-        });
-    },
-
-    editedPerfil: (req, res) => {
-        // let passwordEncriptada = bcrypt.hashSync(req.body.clave, 10);
-
-        console.log(req.file);
-
-        Usuarios.update(
-            {
-                nombre: req.body.nombre,
-                clave: req.body.clave,
-            },
-            {
-                where: {
-                    idUsuarios: req.params.id,
-                },
-            }
-        );
-
-        res.redirect("/login");
-    },
-
     logout: (req, res) => {
         res.clearCookie("userCookie");
         req.session.destroy();

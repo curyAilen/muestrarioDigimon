@@ -66,6 +66,7 @@ let mainController = {
                 carta: req.body.nombre,
                 precio: req.body.precio,
                 stock: req.body.stock,
+                contacto: req.body.edicion,
                 contacto: req.body.contacto,
                 imagen: imagen,
                 descripcion: req.body.descripcion,
@@ -77,7 +78,7 @@ let mainController = {
             })
             .then((carta)=>{
                 console.log(carta)
-                res.redirect("/detalleCarta/:id");
+                res.redirect("/detalleCarta/" + req.params.id);
                 
             })   
     },
